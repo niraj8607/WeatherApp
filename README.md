@@ -60,7 +60,7 @@ Ensure your API key is kept private; do not push .env files to GitHub.
 The app is built purely with React and can be easily extended with backend support if needed.
 
 📬 Contact
-Created by [Your Name] – feel free to reach out via email@example.com
+Created by Niraj Kumar – feel free to reach out via kumarniraj8607@gmail.com
 Check out more projects on my GitHub.
 
 Enjoy checking the weather! ☀️🌧️⛅
