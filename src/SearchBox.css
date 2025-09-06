@@ -1,0 +1,95 @@
+/* .SearchBox{
+    text-align: center;
+} */
+
+
+/* --- Basic Setup & Background --- */
+/* This is for the body to center the component and give a nice backdrop.
+   You can move this to your main App.css or index.css file. */
+body {
+  background: #f0f2f5; /* A light grey background to make the card stand out */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* --- The Main SearchBox Container --- */
+.SearchBox {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* A cool, modern gradient */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.SearchBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Heading Style --- */
+.SearchBox h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Styling the Material-UI TextField --- */
+
+/* Change the label color */
+.SearchBox .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Change the label color when focused */
+.SearchBox .MuiInputLabel-root.Mui-focused {
+  color: #ffffff !important;
+}
+
+/* Style the input text itself */
+.SearchBox .MuiInputBase-input {
+  color: #ffffff !important;
+}
+
+/* Style the border of the TextField */
+.SearchBox .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  border-width: 2px;
+  transition: border-color 0.3s ease;
+}
+
+/* Style the border on hover */
+.SearchBox .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Style the border on focus */
+.SearchBox .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff !important;
+}
+
+
+/* --- Styling the Material-UI Button --- */
+.SearchBox .MuiButton-root {
+  background-color: #ffc107 !important; /* A vibrant, sunny yellow */
+  color: #2c3e50 !important; /* Dark text for contrast */
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  transition: background-color 0.3s ease, transform 0.2s ease !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.SearchBox .MuiButton-root:hover {
+  background-color: #ffca28 !important; /* A slightly lighter yellow on hover */
+  transform: scale(1.05); /* Make the button slightly larger on hover */
+}

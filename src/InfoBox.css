@@ -1,0 +1,83 @@
+/* .InfoBox{
+    text-align: center;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+} */
+
+/* --- Main InfoBox Container --- */
+.InfoBox {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Style the main heading above the card */
+.InfoBox h1 {
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+/* --- The Card's Container --- */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- Styling the Material-UI Card --- */
+/* This is where the magic happens! */
+.cardContainer .MuiCard-root {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 20px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  background: #ffffff !important;
+  overflow: visible !important; /* Allow potential pseudo-elements to show */
+}
+
+/* Add a cool "lift" effect on hover */
+.cardContainer .MuiCard-root:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* --- Styling the Card Image --- */
+.cardContainer .MuiCardMedia-root {
+  border-radius: 20px 20px 0 0 !important; /* Match the card's rounded corners */
+  object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+/* --- Styling the Card Content Area --- */
+.cardContainer .MuiCardContent-root {
+  padding: 24px !important;
+  text-align: left;
+}
+
+/* Style the City Name (h5) */
+.cardContainer .MuiTypography-h5 {
+  color: #2c3e50; /* A deep, professional blue */
+  font-weight: 700 !important;
+  margin-bottom: 16px !important;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 10px;
+}
+
+/* Style the container for the weather details */
+.cardContainer .MuiTypography-body2 p {
+  margin: 10px 0 !important;
+  color: #555; /* A softer color for the details */
+  font-size: 1rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the last paragraph specifically for a summary feel */
+.cardContainer .MuiTypography-body2 p:last-child {
+  margin-top: 20px !important;
+  padding-top: 10px;
+  border-top: 2px solid #f0f2f5;
+  font-style: italic;
+  color: #333;
+}

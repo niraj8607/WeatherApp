@@ -1,0 +1,31 @@
+/* Add this to your index.css or App.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+  /* --- Impressive Golden Hour Sunset --- */
+  background: linear-gradient(125deg, #ff7e5f, #feb47b, #ffc9a9, #f7b7a3);
+  background-size: 300% 300%;
+  animation: sunsetGlow 18s ease infinite;
+
+  /* This ensures your content is centered */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes sunsetGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
